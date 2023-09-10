@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./output.css">
+    <title>Document</title>
+</head>
+
+<body class="h-screen bg-slate-300">
+    <div class="h-full  justify-center flex items-center">
+        <div class="container flex flex-col     ">
+            <div class="flex flex-col  before:rounded-lg before:text-xl before:w-72 before:md:w-96 before:border-2 before:bg-cyan-700 before:text-white before:text-center before:p-4 before:m-2 before:content-['SimpleCalculator'] items-center ">
+                <div class="">
+                    <input type="text" disabled name="" id="inp"
+                        class="sm:p-8 p-4 sm:text-2xl text-xl font-bold text-slate-200 rounded-t-lg text-right bg-cyan-700"
+                        id="">
+
+                    <div class="flex flex-col  border-b-2 border-r-2 border-l-2  rounded-b-lg w-full  ">
+                        <div class="flex justify-evenly p-2 w-full">
+                            <button onclick="press(`7`)"
+                                class="p-2 rounded-full w-11 text-lg font-bold text-gray-600 bg-slate-200">7</button>
+                            <button onclick="press(`8`)"
+                                class="p-2 rounded-full w-11 text-lg font-bold text-gray-600 bg-slate-200">8</button>
+                            <button onclick="press(`9`)"
+                                class="p-2 rounded-full w-11 text-lg font-bold text-gray-600 bg-slate-200">9</button>
+                            <button onclick="press(`+`)"
+                                class="p-2 rounded-full w-11 text-lg font-bold text-gray-600 bg-slate-200">+</button>
+                        </div>
+                        <div class="flex justify-evenly p-2 w-full">
+                            <button onclick="press(`4`)"
+                                class="p-2 rounded-full w-11 text-lg font-bold text-gray-600 bg-slate-200">4</button>
+                            <button onclick="press(`5`)"
+                                class="p-2 rounded-full w-11 text-lg font-bold text-gray-600 bg-slate-200">5</button>
+                            <button onclick="press(`6`)"
+                                class="p-2 rounded-full w-11 text-lg font-bold text-gray-600 bg-slate-200">6</button>
+                            <button onclick="press(`-`)"
+                                class="p-2 rounded-full w-11 text-lg font-bold text-gray-600 bg-slate-200">-</button>
+                        </div>
+                        <div class="flex justify-evenly p-2 w-full">
+                            <button onclick="press(`1`)"
+                                class="p-2 rounded-full w-11 text-lg font-bold text-gray-600 bg-slate-200">1</button>
+                            <button onclick="press(`2`)"
+                                class="p-2 rounded-full w-11 text-lg font-bold text-gray-600 bg-slate-200">2</button>
+                            <button onclick="press(`3`)"
+                                class="p-2 rounded-full w-11 text-lg font-bold text-gray-600 bg-slate-200">3</button>
+                            <button onclick="press(`*`)"
+                                class="p-2 rounded-full w-11 text-lg font-bold text-gray-600 bg-slate-200">x</button>
+                        </div>
+                        <div class="flex justify-evenly p-2 w-full">
+                            <button onclick="press(`0`)"
+                                class="p-2 rounded-full w-11 text-lg font-bold text-gray-600 bg-slate-200">0</button>
+                            <button onclick="press(`.`)"
+                                class="p-2 rounded-full w-11 text-lg font-bold text-gray-600 bg-slate-200">.</button>
+                            <button onclick="press(`/`)"
+                                class="p-2 rounded-full w-11 text-lg font-bold text-gray-600 bg-slate-200">/</button>
+                            <button onclick="res()"
+                                class="p-2 rounded-full w-11 text-lg font-bold text-gray-600 bg-slate-200">=</button>
+                        </div>
+                        <div class="flex justify-evenly p-2 w-full">
+                            <button onclick="press(`(`)"
+                                class="p-2 rounded-full w-11 text-lg font-bold text-gray-600 bg-slate-200">(</button>
+                            <button onclick="press(`)`)"
+                                class="p-2 rounded-full w-11 text-lg font-bold text-gray-600 bg-slate-200">)</button>
+                            <button onclick="del()"
+                                class="p-2 rounded-full w-12 text-lg font-bold text-gray-600 bg-slate-200">DEL</button>
+                            <button onclick="clr()"
+                                class="p-2 rounded-full w-11 text-lg font-bold text-gray-600 bg-slate-200">AC</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+
+</html>
